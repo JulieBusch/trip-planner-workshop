@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}Your Trip{% endblock %}
+
+{% block content %}
+<div id="app" class="clearfix">
+    <h1>Hotels</h1>
+    <select name= "hotels">
+      {% for hotel in results.hotels %}
+        <option>{{hotel.name}}</option>
+      {% endfor %}
+    </select>
+    <h1>Activities</h1>
+    <select name= "activities">
+      {% for activity in results.activities %}
+        <option>{{activity.name}}</option>
+      {% endfor %}
+    </select>
+    <h1>Restaurants</h1>
+    <select name= "restaurants">
+      {% for restaurant in results.restaurants %}
+        <option>{{restaurant.name}}</option>
+      {% endfor %}
+    </select>
+</div>
+
+{% endblock %}

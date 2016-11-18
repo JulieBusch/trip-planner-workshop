@@ -20,4 +20,4 @@ const Place = dbConnection.define('place', {
   }
 });
 
-module.exports = {Place: Place};
+module.exports = Place;

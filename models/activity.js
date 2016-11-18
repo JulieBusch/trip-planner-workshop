@@ -11,4 +11,4 @@ const Activity = dbConnection.define('activity', {
   }
 });
 
-module.exports = {Activity: Activity};
+module.exports = Activity;

@@ -10,10 +10,14 @@ const Restaurant = dbConnection.define('restaurant', {
     type: Sequelize.STRING
   },
   price: {
-    type: Sequelize.INTEGER(5)
+    type: Sequelize.INTEGER,
+    validate: {
+      min: 1,
+      max: 5
+    }
   }
 });
 
 
 
-module.exports = {Restaurant: Restaurant};
+module.exports = Restaurant;
