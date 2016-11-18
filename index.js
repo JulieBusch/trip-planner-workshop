@@ -27,6 +27,21 @@ app.use('/', function(err, req, res, next) {
   }
 });
 
+// OR
+
+// app.use(function(req, res, next) {
+//   var err = new Error('Not Found');
+//   err.status = 404;
+//   next(err);
+// });
+
+// // handle all errors (anything passed into `next()`)
+// app.use(function(err, req, res, next) {
+//   res.status(err.status || 500);
+//   console.error(err);
+//   res.render('error');
+// });
+
 
 
 
